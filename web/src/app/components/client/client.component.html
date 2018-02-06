@@ -1,0 +1,40 @@
+<h3 class="left-align">New Client</h3>
+  
+<div class="row">
+  <form class="col s6">
+    <div class="row">
+      <div class="input-field col s8">
+        <input id="first_name" type="text" class="validate" name="1" [(ngModel)]="client.name">
+        <label for="first_name">Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s8">
+        <input id="email" type="text" class="validate" name="2" [(ngModel)]="client.mail">
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s8">
+        <input id="phone" type="tel" class="validate" name="3" [(ngModel)]="client.phone">
+        <label for="phone">Phone</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s8">
+        <input id="project" type="text" class="validate" name="4" [(ngModel)]="client.project">
+        <label for="project">Project</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s8">
+        <input id="status" type="text" class="validate" name="5" [(ngModel)]="client.status">
+        <label for="status">Status</label>
+      </div>
+    </div>
+    <div class="row">
+      <a class="btn waves-effect waves-light blue" (click)="save();">Create</a>
+      <a class="waves-effect waves-light btn" (click)="back();">Back</a>
+    </div>
+  </form>
+</div>
