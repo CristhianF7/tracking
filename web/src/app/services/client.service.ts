@@ -7,7 +7,7 @@ export class ClientService {
 
   constructor(private http: Http) { }
 
-  public url : string = "http://localhost:8080/"
+  public url : string = "http://localhost:8080/";
 
   get() {
     return this.http.get(this.url + "Client")
